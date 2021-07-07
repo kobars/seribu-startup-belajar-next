@@ -31,7 +31,7 @@ function pokemonReducer(state, action) {
 function locationReducer(state, action) {
   switch (action.type) {
     case 'pokemon':
-      return { ...state, pokemonName: action.payload };
+      return { ...state, area: action.payload };
     default:
       throw new Error();
   }
